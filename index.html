@@ -388,53 +388,6 @@
       font-weight: 500;
     }
 
-    /* Testimonials Section */
-    .testimonials {
-      padding: 100px 0;
-      background: #f5f5f7;
-    }
-
-    .testimonials h2 {
-      text-align: center;
-      font-size: 40px;
-      font-weight: 700;
-      margin-bottom: 80px;
-      color: #1d1d1f;
-    }
-
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 40px;
-    }
-
-    .testimonial-card {
-      background: #ffffff;
-      padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .testimonial-card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-    }
-
-    .testimonial-content p {
-      font-size: 18px;
-      line-height: 1.6;
-      color: #1d1d1f;
-      margin-bottom: 24px;
-      font-style: italic;
-    }
-
-    .testimonial-author {
-      display: flex;
-      align-items: center;
-      gap: 16px;
-    }
-
     .author-info h4 {
       font-size: 16px;
       font-weight: 600;
@@ -575,24 +528,6 @@
       .stat-number {
         font-size: 36px;
       }
-
-      .testimonials h2 {
-        font-size: 32px;
-        margin-bottom: 40px;
-      }
-
-      .testimonials-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
-      }
-
-      .testimonial-card {
-        padding: 24px;
-      }
-
-      .testimonial-content p {
-        font-size: 16px;
-      }
     }
   </style>
 </head>
@@ -617,7 +552,6 @@
       <ul class="nav-links" id="navLinks">
         <li><a href="#home">Home</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="https://blog.streaknfit.com" target="_blank" rel="noopener">Blog</a></li>
       </ul>
@@ -893,7 +827,7 @@
     }, observerOptions);
 
     // Observe elements for animation
-    document.querySelectorAll('.feature-card, .testimonial-card, .stat-item').forEach(el => {
+    document.querySelectorAll('.feature-card, .stat-item').forEach(el => {
       el.style.opacity = '0';
       el.style.transform = 'translateY(20px)';
       el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
